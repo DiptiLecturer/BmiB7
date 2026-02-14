@@ -91,10 +91,11 @@
         android:text="Calculate" />
 
     <LinearLayout
+        android:id="@+id/resultLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:padding="8dp"
-        android:visibility="invisible"
+        android:visibility="gone"
         android:layout_weight="5"
         android:background="#3A2962FF"
         android:orientation="vertical">
