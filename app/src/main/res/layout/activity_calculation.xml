@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:weightSum="16"
+    tools:context=".CalculationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#2C00B8D4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:padding="20dp"
+            android:text="Enter your height in Meter"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/heightTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your Height(meter)"
+            android:paddingHorizontal="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/heightET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="#3A2962FF"
+        android:orientation="vertical"
+        android:text="enter your weight in Kg">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20dp"
+            android:text="enter your weight in Kg"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/weightTIL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="enter your weight(KG)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/weightET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/gotoBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/black"
+        android:text="Calculate" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="8dp"
+        android:visibility="invisible"
+        android:layout_weight="5"
+        android:background="#3A2962FF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Result"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/bmiResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="18.7"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#DD2C00"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/bmiStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fit"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#00C853"
+            android:padding="8dp"/>
+        <TextView
+            android:id="@+id/bmiAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go To Gym"
+            android:textSize="26sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#DD2C00"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
